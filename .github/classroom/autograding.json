@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "檢查是否產生檔案",
+      "setup": "",
+      "run": "pytest -v tests/test_grading.py::test_output_file_exists",
+      "input": "",
+      "expected_output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "檢查檔案內容是否不為空",
+      "setup": "",
+      "run": "pytest -v tests/test_grading.py::test_output_file_not_empty",
+      "input": "",
+      "expected_output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "檢查輸出格式是否正確",
+      "setup": "",
+      "run": "pytest -v tests/test_grading.py::test_output_format",
+      "input": "",
+      "expected_output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    }
+  ]
+}
